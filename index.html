@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html dir="ltr" class="crjs js" lang="en">
+
+<head style="">
+
+<style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+
+ 
+   <script type="text/javascript" src="js/e0aca60db6"></script>
+  <script src="js/nr-1211.js"></script>
+  <script async="" src="js/clarity.js"></script>
+  <script async="" src="js/3w0hhdjn2y.js"></script>
+  <script src="js/616720425332521.js" async=""></script>
+  <script src="js/1539026489718864.js" async=""></script>
+  <script async="" src="js/fbevents.js"></script>
+  <script type="text/javascript" async="" src="js/conversion_async.js"></script> 
+  <script type="text/javascript" async="" src="js/bat.js"></script>
+  <script type="text/javascript" async="" src="js/analytics.js"></script><script src="js/gtm.js" async=""></script>
+  <script async="" src="Design%20Centre%20Garaga%20Garage%20Door%20quality_files/analytics.js"></script><script type="text/javascript">(window.NREUM || (NREUM = {})).init = {
+    ajax: {
+        deny_list: ["bam-cell.nr-data.net"]
+    }
+};
+(window.NREUM || (NREUM = {})).loader_config = {
+    licenseKey: "e0aca60db6",
+    applicationID: "56254834"
+};
+window.NREUM || (NREUM = {}), __nr_require = function(t, e, n) {
+    function r(n) {
+        if (!e[n]) {
+            var i = e[n] = {
+                exports: {}
+            };
+            t[n][0].call(i.exports, function(e) {
+                var i = t[n][1][e];
+                return r(i || e)
+            }, i, i.exports)
+        }
+        return e[n].exports
+    }
+    if ("function" == typeof __nr_require) return __nr_require;
+    for (var i = 0; i < n.length; i++) r(n[i]);
+    return r
+}({
+    1: [function(t, e, n) {
+        function r() {}
+
+        function i(t, e, n) {
+            return function() {
+                return o(t, [u.now()].concat(f(arguments)), e ? null : this, n), e ? void 0 : this
+            }
+        }
+        var o = t("handle"),
+            a = t(8),
+            f = t(9),
+            c = t("ee").get("tracer"),
+            u = t("loader"),
+            s = NREUM;
+        "undefined" == typeof window.newrelic && (newrelic = s);
+        var d = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"],
+            p = "api-",
+            l = p + "ixn-";
+        a(d, function(t, e) {
+            s[e] = i(p + e, !0, "api")
+        }), s.addPageAction = i(p + "addPageAction", !0), s.setCurrentRouteName = i(p + "routeName", !0), e.exports = newrelic, s.interaction = function() {
+            return (new r).get()
+        };
+        var m = r.prototype = {
+            createTracer: function(t, e) {
+                var n = {},
+                    r = this,
+                    i = "function" == typeof e;
+                return o(l + "tracer", [u.now(), t, n], r),
+                    function() {
+                        if (c.emit((i ? "" : "no-") + "fn-start", [u.now(), r, i], n), i) try {
+                            return e.apply(this, arguments)
+                        } catch (t) {
+                            throw c.emit("fn-err", [arguments, this, t], n), t
+                        } finally {
+                            c.emit("fn-end", [u.now()], n)
+                        }
+                    }
+            }
+        };
+        a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function(t, e) {
+            m[e] = i(l + e)
+        }), newrelic.noticeError = function(t, e) {
+            "string" == typeof t && (t = new Error(t)), o("err", [t, u.now(), !1, e])
+        }
+    }, {}],
+    2: [function(t, e, n) {
+        function r(t) {
+            if (NREUM.init) {
+                for (var e = NREUM.init, n = t.split("."), r = 0; r < n.length - 1; r++)
+                    if (e = e[n[r]], "object" != typeof e) return;
+                return e = e[n[n.length - 1]]
+            }
+        }
+        e.exports = {
+            getConfiguration: r
+        }
+    }, {}],
+    3: [function(t, e, n) {
+        function r() {
+            return f.exists && performance.now ? Math.round(performance.now()) : (o = Math.max((new Date).getTime(), o)) - a
+        }
+
+        function i() {
+            return o
+        }
+        var o = (new Date).getTime(),
+            a = o,
+            f = t(10);
+        e.exports = r, e.exports.offset = a, e.exports.getLastTimestamp = i
+    }, {}],
+    4: [function(t, e, n) {
+        function r(t) {
+            return !(!t || !t.protocol || "file:" === t.protocol)
+        }
+        e.exports = r
+    }, {}],
+    5: [function(t, e, n) {
+        function r(t, e) {
+            var n = t.getEntries();
+            n.forEach(function(t) {
+                "first-paint" === t.name ? d("timing", ["fp", Math.floor(t.startTime)]) : "first-contentful-paint" === t.name && d("timing", ["fcp", Math.floor(t.startTime)])
+            })
+        }
+
+        function i(t, e) {
+            var n = t.getEntries();
+            n.length > 0 && d("lcp", [n[n.length - 1]])
+        }
+
+        function o(t) {
+            t.getEntries().forEach(function(t) {
+                t.hadRecentInput || d("cls", [t])
+            })
+        }
+
+        function a(t) {
+            if (t instanceof m && !g) {
+                var e = Math.round(t.timeStamp),
+                    n = {
+                        type: t.type
+                    };
+                e <= p.now() ? n.fid = p.now() - e : e > p.offset && e <= Date.now() ? (e -= p.offset, n.fid = p.now() - e) : e = p.now(), g = !0, d("timing", ["fi", e, n])
+            }
+        }
+
+        function f(t) {
+            "hidden" === t && d("pageHide", [p.now()])
+        }
+        if (!("init" in NREUM && "page_view_timing" in NREUM.init && "enabled" in NREUM.init.page_view_timing && NREUM.init.page_view_timing.enabled === !1)) {
+            var c, u, s, d = t("handle"),
+                p = t("loader"),
+                l = t(7),
+                m = NREUM.o.EV;
+            if ("PerformanceObserver" in window && "function" == typeof window.PerformanceObserver) {
+                c = new PerformanceObserver(r);
+                try {
+                    c.observe({
+                        entryTypes: ["paint"]
+                    })
+                } catch (v) {}
+                u = new PerformanceObserver(i);
+                try {
+                    u.observe({
+                        entryTypes: ["largest-contentful-paint"]
+                    })
+                } catch (v) {}
+                s = new PerformanceObserver(o);
+                try {
+                    s.observe({
+                        type: "layout-shift",
+                        buffered: !0
+                    })
+                } catch (v) {}
+            }
+            if ("addEventListener" in document) {
+                var g = !1,
+                    h = ["click", "keydown", "mousedown", "pointerdown", "touchstart"];
+                h.forEach(function(t) {
+                    document.addEventListener(t, a, !1)
+                })
+            }
+            l(f)
+        }
+    }, {}],
+    6: [function(t, e, n) {
+        function r(t, e) {
+            if (!i) return !1;
+            if (t !== i) return !1;
+            if (!e) return !0;
+            if (!o) return !1;
+            for (var n = o.split("."), r = e.split("."), a = 0; a < r.length; a++)
+                if (r[a] !== n[a]) return !1;
+            return !0
+        }
+        var i = null,
+            o = null,
+            a = /Version\/(\S+)\s+Safari/;
+        if (navigator.userAgent) {
+            var f = navigator.userAgent,
+                c = f.match(a);
+            c && f.indexOf("Chrome") === -1 && f.indexOf("Chromium") === -1 && (i = "Safari", o = c[1])
+        }
+        e.exports = {
+            agent: i,
+            version: o,
+            match: r
+        }
+    }, {}],
+    7: [function(t, e, n) {
+        function r(t) {
+            function e() {
+                t(a && document[a] ? document[a] : document[i] ? "hidden" : "visible")
+            }
+            "addEventListener" in document && o && document.addEventListener(o, e, !1)
+        }
+        e.exports = r;
+        var i, o, a;
+        "undefined" != typeof document.hidden ? (i = "hidden", o = "visibilitychange", a = "visibilityState") : "undefined" != typeof document.msHidden ? (i = "msHidden", o = "msvisibilitychange") : "undefined" != typeof document.webkitHidden && (i = "webkitHidden", o = "webkitvisibilitychange", a = "webkitVisibilityState")
+    }, {}],
+    8: [function(t, e, n) {
+        function r(t, e) {
+            var n = [],
+                r = "",
+                o = 0;
+            for (r in t) i.call(t, r) && (n[o] = e(r, t[r]), o += 1);
+            return n
+        }
+        var i = Object.prototype.hasOwnProperty;
+        e.exports = r
+    }, {}],
+    9: [function(t, e, n) {
+        function r(t, e, n) {
+            e || (e = 0), "undefined" == typeof n && (n = t ? t.length : 0);
+            for (var r = -1, i = n - e || 0, o = Array(i < 0 ? 0 : i); ++r < i;) o[r] = t[e + r];
+            return o
+        }
+        e.exports = r
+    }, {}],
+    10: [function(t, e, n) {
+        e.exports = {
+            exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart
+        }
+    }, {}],
+    ee: [function(t, e, n) {
+        function r() {}
+
+        function i(t) {
+            function e(t) {
+                return t && t instanceof r ? t : t ? u(t, c, a) : a()
+            }
+
+            function n(n, r, i, o, a) {
+                if (a !== !1 && (a = !0), !l.aborted || o) {
+                    t && a && t(n, r, i);
+                    for (var f = e(i), c = v(n), u = c.length, s = 0; s < u; s++) c[s].apply(f, r);
+                    var p = d[w[n]];
+                    return p && p.push([b, n, r, f]), f
+                }
+            }
+
+            function o(t, e) {
+                y[t] = v(t).concat(e)
+            }
+
+            function m(t, e) {
+                var n = y[t];
+                if (n)
+                    for (var r = 0; r < n.length; r++) n[r] === e && n.splice(r, 1)
+            }
+
+            function v(t) {
+                return y[t] || []
+            }
+
+            function g(t) {
+                return p[t] = p[t] || i(n)
+            }
+
+            function h(t, e) {
+                l.aborted || s(t, function(t, n) {
+                    e = e || "feature", w[n] = e, e in d || (d[e] = [])
+                })
+            }
+            var y = {},
+                w = {},
+                b = {
+                    on: o,
+                    addEventListener: o,
+                    removeEventListener: m,
+                    emit: n,
+                    get: g,
+                    listeners: v,
+                    context: e,
+                    buffer: h,
+                    abort: f,
+                    aborted: !1
+                };
+            return b
+        }
+
+        function o(t) {
+            return u(t, c, a)
+        }
+
+        function a() {
+            return new r
+        }
+
+        function f() {
+            (d.api || d.feature) && (l.aborted = !0, d = l.backlog = {})
+        }
+        var c = "nr@context",
+            u = t("gos"),
+            s = t(8),
+            d = {},
+            p = {},
+            l = e.exports = i();
+        e.exports.getOrSetContext = o, l.backlog = d
+    }, {}],
+    gos: [function(t, e, n) {
+        function r(t, e, n) {
+            if (i.call(t, e)) return t[e];
+            var r = n();
+            if (Object.defineProperty && Object.keys) try {
+                return Object.defineProperty(t, e, {
+                    value: r,
+                    writable: !0,
+                    enumerable: !1
+                }), r
+            } catch (o) {}
+            return t[e] = r, r
+        }
+        var i = Object.prototype.hasOwnProperty;
+        e.exports = r
+    }, {}],
+    handle: [function(t, e, n) {
+        function r(t, e, n, r) {
+            i.buffer([t], r), i.emit(t, e, n)
+        }
+        var i = t("ee").get("handle");
+        e.exports = r, r.ee = i
+    }, {}],
+    id: [function(t, e, n) {
+        function r(t) {
+            var e = typeof t;
+            return !t || "object" !== e && "function" !== e ? -1 : t === window ? 0 : a(t, o, function() {
+                return i++
+            })
+        }
+        var i = 1,
+            o = "nr@id",
+            a = t("gos");
+        e.exports = r
+    }, {}],
+    loader: [function(t, e, n) {
+        function r() {
+            if (!R++) {
+                var t = M.info = NREUM.info,
+                    e = v.getElementsByTagName("script")[0];
+                if (setTimeout(u.abort, 3e4), !(t && t.licenseKey && t.applicationID && e)) return u.abort();
+                c(E, function(e, n) {
+                    t[e] || (t[e] = n)
+                });
+                var n = a();
+                f("mark", ["onload", n + M.offset], null, "api"), f("timing", ["load", n]);
+                var r = v.createElement("script");
+                0 === t.agent.indexOf("http://") || 0 === t.agent.indexOf("https://") ? r.src = t.agent : r.src = l + "://" + t.agent, e.parentNode.insertBefore(r, e)
+            }
+        }
+
+        function i() {
+            "complete" === v.readyState && o()
+        }
+
+        function o() {
+            f("mark", ["domContent", a() + M.offset], null, "api")
+        }
+        var a = t(3),
+            f = t("handle"),
+            c = t(8),
+            u = t("ee"),
+            s = t(6),
+            d = t(4),
+            p = t(2),
+            l = p.getConfiguration("ssl") === !1 ? "http" : "https",
+            m = window,
+            v = m.document,
+            g = "addEventListener",
+            h = "attachEvent",
+            y = m.XMLHttpRequest,
+            w = y && y.prototype,
+            b = !d(m.location);
+        NREUM.o = {
+            ST: setTimeout,
+            SI: m.setImmediate,
+            CT: clearTimeout,
+            XHR: y,
+            REQ: m.Request,
+            EV: m.Event,
+            PR: m.Promise,
+            MO: m.MutationObserver
+        };
+        var x = "" + location,
+            E = {
+                beacon: "bam.nr-data.net",
+                errorBeacon: "bam.nr-data.net",
+                agent: "js-agent.newrelic.com/nr-1211.min.js"
+            },
+            O = y && w && w[g] && !/CriOS/.test(navigator.userAgent),
+            M = e.exports = {
+                offset: a.getLastTimestamp(),
+                now: a,
+                origin: x,
+                features: {},
+                xhrWrappable: O,
+                userAgent: s,
+                disabled: b
+            };
+        if (!b) {
+            t(1), t(5), v[g] ? (v[g]("DOMContentLoaded", o, !1), m[g]("load", r, !1)) : (v[h]("onreadystatechange", i), m[h]("onload", r)), f("mark", ["firstbyte", a.getLastTimestamp()], null, "api");
+            var R = 0
+        }
+    }, {}],
+    "wrap-function": [function(t, e, n) {
+        function r(t, e) {
+            function n(e, n, r, c, u) {
+                function nrWrapper() {
+                    var o, a, s, p;
+                    try {
+                        a = this, o = d(arguments), s = "function" == typeof r ? r(o, a) : r || {}
+                    } catch (l) {
+                        i([l, "", [o, a, c], s], t)
+                    }
+                    f(n + "start", [o, a, c], s, u);
+                    try {
+                        return p = e.apply(a, o)
+                    } catch (m) {
+                        throw f(n + "err", [o, a, m], s, u), m
+                    } finally {
+                        f(n + "end", [o, a, p], s, u)
+                    }
+                }
+                return a(e) ? e : (n || (n = ""), nrWrapper[p] = e, o(e, nrWrapper, t), nrWrapper)
+            }
+
+            function r(t, e, r, i, o) {
+                r || (r = "");
+                var f, c, u, s = "-" === r.charAt(0);
+                for (u = 0; u < e.length; u++) c = e[u], f = t[c], a(f) || (t[c] = n(f, s ? c + r : r, i, c, o))
+            }
+
+            function f(n, r, o, a) {
+                if (!m || e) {
+                    var f = m;
+                    m = !0;
+                    try {
+                        t.emit(n, r, o, e, a)
+                    } catch (c) {
+                        i([c, n, r, o], t)
+                    }
+                    m = f
+                }
+            }
+            return t || (t = s), n.inPlace = r, n.flag = p, n
+        }
+
+        function i(t, e) {
+            e || (e = s);
+            try {
+                e.emit("internal-error", t)
+            } catch (n) {}
+        }
+
+        function o(t, e, n) {
+            if (Object.defineProperty && Object.keys) try {
+                var r = Object.keys(t);
+                return r.forEach(function(n) {
+                    Object.defineProperty(e, n, {
+                        get: function() {
+                            return t[n]
+                        },
+                        set: function(e) {
+                            return t[n] = e, e
+                        }
+                    })
+                }), e
+            } catch (o) {
+                i([o], n)
+            }
+            for (var a in t) l.call(t, a) && (e[a] = t[a]);
+            return e
+        }
+
+        function a(t) {
+            return !(t && t instanceof Function && t.apply && !t[p])
+        }
+
+        function f(t, e) {
+            var n = e(t);
+            return n[p] = t, o(t, n, s), n
+        }
+
+        function c(t, e, n) {
+            var r = t[e];
+            t[e] = f(r, n)
+        }
+
+        function u() {
+            for (var t = arguments.length, e = new Array(t), n = 0; n < t; ++n) e[n] = arguments[n];
+            return e
+        }
+        var s = t("ee"),
+            d = t(9),
+            p = "nr@original",
+            l = Object.prototype.hasOwnProperty,
+            m = !1;
+        e.exports = r, e.exports.wrapFunction = f, e.exports.wrapInPlace = c, e.exports.argsToArray = u
+    }, {}]
+}, {}, ["loader"]);
+</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2209234-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+
+<link rel="shortcut icon" href="https://www.garaga.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="alternate" hreflang="en" href="https://www.garaga.com/ca/designcentre/selection">
+<link rel="alternate" hreflang="fr" href="https://www.garaga.com/fr-ca/centredesign/selection">
+<link rel="alternate" hreflang="en-us" href="https://www.garaga.com/designcentre/selection">
+<link rel="canonical" href="http://www.garaga.com/ca/designcentre/selection">
+<link rel="shortlink" href="http://www.garaga.com/ca/node/6">
+<link rel="revision" href="http://www.garaga.com/ca/designcentre/selection">
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PRLKTT8');</script>
+
+  <title>Design Centre | Garaga Garage Door quality</title>
+  <link rel="stylesheet" media="all" href="css/css_iuC7Oc0f4ox-gp0LOwMRTUJn2_4edVDiiMyyGxmDv7c.css">
+<link rel="stylesheet" media="all" href="css/css__g5cQdYtBZB8KRXdyKeQlc4F0r2V9cQ-5w8wskGiORk.css">
+<link rel="stylesheet" media="all" href="css/css.css">
+<link rel="stylesheet" media="all" href="Design%20Centre%20Garaga%20Garage%20Door%20quality_files/css_47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU.css">
+
+  
+<script async="" src="js/hotjar-37960.js"></script><script type="text/javascript" src="js/api.js" async="" data-user="103151" data-account="114752"></script><script src="Design%20Centre%20Garaga%20Garage%20Door%20quality_files/21013517.js" type="text/javascript" async=""></script><script src="Design%20Centre%20Garaga%20Garage%20Door%20quality_files/a"></script><style type="text/css">.crjs .phoneswap { visibility: hidden; }</style><style type="text/css">@keyframes omBounce{0%,20%,50%,80%,to{transform:translateY(0)}40%{transform:translateY(-30px)}60%{transform:translateY(-15px)}}.om-animation-bounce{animation-duration:1s;animation-fill-mode:both;animation-name:omBounce}@keyframes omBounceIn{0%{opacity:0;transform:scale(.3)}50%{opacity:1;transform:scale(1.05)}70%{transform:scale(.9)}to{opacity:1;transform:scale(1)}}.om-animation-bounce-in{animation-duration:1s;animation-name:omBounceIn}@keyframes omBounceInDown{0%{opacity:0;transform:translateY(-2000px)}60%{opacity:1;transform:translateY(30px)}80%{transform:translateY(-10px)}to{transform:translateY(0)}}.om-animation-bounce-in-down{animation-duration:1s;animation-name:omBounceInDown}@keyframes omBounceInLeft{0%{opacity:0;transform:translateX(-2000px)}60%{opacity:1;transform:translateX(30px)}80%{transform:translateX(-10px)}to{transform:translateX(0)}}.om-animation-bounce-in-left{animation-duration:1s;animation-name:omBounceInLeft}@keyframes omBounceInRight{0%{opacity:0;transform:translateX(2000px)}60%{opacity:1;transform:translateX(-30px)}80%{transform:translateX(10px)}to{transform:translateX(0)}}.om-animation-bounce-in-right{animation-duration:1s;animation-name:omBounceInRight}@keyframes omBounceInUp{0%{opacity:0;transform:translateY(2000px)}60%{opacity:1;transform:translateY(-30px)}80%{transform:translateY(10px)}to{transform:translateY(0)}}.om-animation-bounce-in-up{animation-duration:1s;animation-name:omBounceInUp}@keyframes omFlash{0%,50%,to{opacity:1}25%,75%{opacity:0}}.om-animation-flash{animation-duration:1s;animation-fill-mode:both;animation-name:omFlash}@keyframes omFlip{0%{transform:perspective(800px) translateZ(0) rotateY(0) scale(1);animation-timing-function:ease-out}40%{transform:perspective(800px) translateZ(150px) rotateY(170deg) scale(1);animation-timing-function:ease-out}50%{transform:perspective(800px) translateZ(150px) rotateY(190deg) scale(1);animation-timing-function:ease-in}80%{transform:perspective(800px) translateZ(0) rotateY(1turn) scale(.95);animation-timing-function:ease-in}to{transform:perspective(800px) translateZ(0) rotateY(1turn) scale(1);animation-timing-function:ease-in}}.om-animation-flip{animation-duration:1s;backface-visibility:visible;animation-name:omFlip}@keyframes omFlipInX{0%{transform:perspective(800px) rotateX(90deg);opacity:0}40%{transform:perspective(800px) rotateX(-10deg)}70%{transform:perspective(800px) rotateX(10deg)}to{transform:perspective(800px) rotateX(0deg);opacity:1}}.om-animation-flip-down{animation-duration:1s;backface-visibility:visible;animation-name:omFlipInX}@keyframes omFlipInY{0%{transform:perspective(800px) rotateY(90deg);opacity:0}40%{transform:perspective(800px) rotateY(-10deg)}70%{transform:perspective(800px) rotateY(10deg)}to{transform:perspective(800px) rotateY(0deg);opacity:1}}.om-animation-flip-side{animation-duration:1s;backface-visibility:visible;animation-name:omFlipInY}@keyframes omLightSpeedIn{0%{transform:translateX(100%) skewX(-30deg);opacity:0}60%{transform:translateX(-20%) skewX(30deg);opacity:1}80%{transform:translateX(0) skewX(-15deg);opacity:1}to{transform:translateX(0) skewX(0deg);opacity:1}}.om-animation-light-speed{animation-duration:1s;animation-name:omLightSpeedIn;animation-timing-function:ease-out}@keyframes omPulse{0%{transform:scale(1)}50%{transform:scale(1.1)}to{transform:scale(1)}}.om-animation-pulse{animation-duration:1s;animation-fill-mode:both;animation-name:omPulse}@keyframes omRollIn{0%{opacity:0;transform:translateX(-100%) rotate(-120deg)}to{opacity:1;transform:translateX(0) rotate(0deg)}}.om-animation-roll-in{animation-duration:1s;animation-name:omRollIn}@keyframes omRotateIn{0%{transform-origin:center center;transform:rotate(-200deg);opacity:0}to{transform-origin:center center;transform:rotate(0);opacity:1}}.om-animation-rotate{animation-duration:1s;animation-name:omRotateIn}@keyframes omRotateInDownLeft{0%{transform-origin:left bottom;transform:rotate(-90deg);opacity:0}to{transform-origin:left bottom;transform:rotate(0);opacity:1}}.om-animation-rotate-down-left{animation-duration:1s;animation-name:omRotateInDownLeft}@keyframes omRotateInDownRight{0%{transform-origin:right bottom;transform:rotate(90deg);opacity:0}to{transform-origin:right bottom;transform:rotate(0);opacity:1}}.om-animation-rotate-down-right{animation-duration:1s;animation-name:omRotateInDownRight}@keyframes omRotateInUpLeft{0%{transform-origin:left bottom;transform:rotate(90deg);opacity:0}to{transform-origin:left bottom;transform:rotate(0);opacity:1}}.om-animation-rotate-up-left{animation-duration:1s;animation-name:omRotateInUpLeft}@keyframes omRotateInUpRight{0%{transform-origin:right bottom;transform:rotate(-90deg);opacity:0}to{transform-origin:right bottom;transform:rotate(0);opacity:1}}.om-animation-rotate-up-right{animation-duration:1s;animation-name:omRotateInUpRight}@keyframes omRubberBand{0%{transform:scale(1)}30%{transform:scaleX(1.25) scaleY(.75)}40%{transform:scaleX(.75) scaleY(1.25)}60%{transform:scaleX(1.15) scaleY(.85)}to{transform:scale(1)}}.om-animation-rubber-band{animation-duration:1s;animation-fill-mode:both;animation-name:omRubberBand}@keyframes omShake{0%,to{transform:translateX(0)}10%,30%,50%,70%,90%{transform:translateX(-10px)}20%,40%,60%,80%{transform:translateX(10px)}}.om-animation-shake{animation-duration:1s;animation-fill-mode:both;animation-name:omShake}@keyframes omSlideInDown{0%{opacity:0;transform:translateY(-2000px)}to{transform:translateY(0)}}.om-animation-slide-in-down{animation-duration:1s;animation-name:omSlideInDown}@keyframes omSlideInLeft{0%{opacity:0;transform:translateX(-2000px)}to{transform:translateX(0)}}.om-animation-slide-in-left{animation-duration:1s;animation-name:omSlideInLeft}@keyframes omSlideInRight{0%{opacity:0;transform:translateX(2000px)}to{transform:translateX(0)}}.om-animation-slide-in-right{animation-duration:1s;animation-name:omSlideInRight}@keyframes omSwing{20%{transform:rotate(15deg)}40%{transform:rotate(-10deg)}60%{transform:rotate(5deg)}80%{transform:rotate(-5deg)}to{transform:rotate(0deg)}}.om-animation-swing{animation-duration:1s;transform-origin:top center;animation-name:omSwing}@keyframes omTada{0%{transform:scale(1)}10%,20%{transform:scale(.9) rotate(-3deg)}30%,50%,70%,90%{transform:scale(1.1) rotate(3deg)}40%,60%,80%{transform:scale(1.1) rotate(-3deg)}to{transform:scale(1) rotate(0)}}.om-animation-tada{animation-duration:1s;animation-name:omTada}@keyframes omWobble{0%{transform:translateX(0)}15%{transform:translateX(-25%) rotate(-5deg)}30%{transform:translateX(20%) rotate(3deg)}45%{transform:translateX(-15%) rotate(-3deg)}60%{transform:translateX(10%) rotate(2deg)}75%{transform:translateX(-5%) rotate(-1deg)}to{transform:translateX(0)}}.om-animation-wobble{animation-duration:1s;animation-name:omWobble}.om-content-lock{color:transparent!important;text-shadow:rgba(0,0,0,.5) 0 0 10px;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none;filter:url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");-webkit-filter:blur(10px);-ms-filter:blur(10px);-o-filter:blur(10px);filter:blur(10px)}html.om-mobile-position,html.om-mobile-position body{position:fixed!important}html.om-ios-form,html.om-ios-form body{transform:translateZ(0)!important;-webkit-overflow-scrolling:touch!important;height:100%!important;overflow:auto!important}html.om-position-popup body{overflow:hidden!important}html.om-position-floating-top{transition:padding-top .5s ease!important}html.om-position-floating-bottom{transition:padding-bottom .5s ease!important}html.om-reset-dimensions{height:100%!important;width:100%!important}.om-verification-confirmation{font-family:Lato,Arial,Helvetica,sans-serif;position:fixed;border-radius:10px;bottom:20px;left:20px;padding:10px 20px;opacity:0;transition:opacity .3s ease-in;background:#85bf31;color:#fff;font-size:18px;font-weight:700;z-index:9999}</style><script async="" src="js/modules.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><style>[_nghost-shn-c421] {
+  display: block;
+}
+
+.door-sticky[_ngcontent-shn-c421] {
+  min-height: 1px;
+  display: block;
+  z-index: 99;
+}</style><meta class="foundation-mq"><style>.dimension-item[_ngcontent-shn-c399] {
+  height: 50px;
+}
+
+.dimension-item-description[_ngcontent-shn-c399] {
+  white-space: normal;
+}
+
+label[_ngcontent-shn-c399] {
+  margin-bottom: 0px;
+}</style><style>.desktop.list-item[_ngcontent-shn-c400] {
+  padding: 5px;
+  min-height: 120px;
+}</style><style></style><style>.construction-title[_ngcontent-shn-c403] {
+  font-size: 16px;
+}
+
+.construction-description[_ngcontent-shn-c403] {
+  font-size: 13px;
+  white-space: normal;
+}
+
+dc-more-info[_ngcontent-shn-c403] {
+  padding-left: 5px;
+  margin-top: -1px;
+}</style><style>.desktop[_ngcontent-shn-c404]   .design-name[_ngcontent-shn-c404]   *[_ngcontent-shn-c404] {
+  font-size: 15px;
+}
+
+.available-in-n24[_ngcontent-shn-c404] {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 11px !important;
+}
+
+.available-in-n24.mobile[_ngcontent-shn-c404] {
+  font-size: 10px !important;
+}</style><style>.overlay-title[_ngcontent-shn-c406] {
+  font-size: 16px;
+}</style><style>.available-in-n24[_ngcontent-shn-c407] {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 13px !important;
+}</style><style>dc-more-info[_ngcontent-shn-c409] {
+  padding-left: 5px;
+  margin-top: -1px;
+}</style><style>[_nghost-shn-c366] {
+  all: unset;
+}</style><style>[_nghost-shn-c420] {
+  display: block;
+}
+
+.door-result[_ngcontent-shn-c420]   .door[_ngcontent-shn-c420] {
+  background-color: #fff;
+}
+
+.door-result[_ngcontent-shn-c420]   .door.mobile[_ngcontent-shn-c420] {
+  border-bottom: 1px solid #e7e7e7;
+  margin-bottom: 10px;
+  z-index: 1000;
+}</style><style>[_nghost-shn-c398] {
+  display: block;
+}
+
+.set-picture-mode[_ngcontent-shn-c398] {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
+}
+
+.set-picture-mode[_ngcontent-shn-c398]:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
+}
+
+.set-picture-mode.selected[_ngcontent-shn-c398] {
+  text-decoration: none;
+  color: #E13D23;
+}
+
+.modes[_ngcontent-shn-c398]   .mode[_ngcontent-shn-c398]:first-child {
+  margin-right: 15px;
+}
+
+.mobile[_ngcontent-shn-c398]   .modes[_ngcontent-shn-c398] {
+  justify-content: center;
+}
+
+.mobile[_ngcontent-shn-c398]   .modes[_ngcontent-shn-c398]   .mode[_ngcontent-shn-c398]:first-child {
+  margin-right: 0;
+}
+
+.mobile[_ngcontent-shn-c398]   .modes[_ngcontent-shn-c398]   .mode[_ngcontent-shn-c398]   *[_ngcontent-shn-c398] {
+  font-size: 10px;
+}
+
+.mobile[_ngcontent-shn-c398]   dc-door-only-picture[_ngcontent-shn-c398], .mobile[_ngcontent-shn-c398]   dc-door-on-home-picture[_ngcontent-shn-c398] {
+  min-height: 110px;
+}</style><style>[_nghost-shn-c416] {
+            display: inline-block;
+        }
+
+        .content[_ngcontent-shn-c416] {
+            min-height: 30px;
+        }
+
+        .content-description[_ngcontent-shn-c416] {
+            font-size: 14px;
+        }
+
+        .mobile[_ngcontent-shn-c416]   .content-description[_ngcontent-shn-c416] {
+            font-size: 10px;
+            line-height: 10px;
+        }</style><style>.design-center.mobile[_ngcontent-shn-c419] {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.close[_ngcontent-shn-c419] {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.wish-list-count-footer[_ngcontent-shn-c419] {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.wish-list-count-footer[_ngcontent-shn-c419]   .wish-list-count-footer-content[_ngcontent-shn-c419] {
+  text-align: left;
+  padding: 1px 10px;
+  background-color: #E7E9ED;
+  cursor: pointer;
+}
+
+.wish-list-count-footer[_ngcontent-shn-c419]   .wish-list-count-footer-content[_ngcontent-shn-c419]   *[_ngcontent-shn-c419] {
+  font-size: 14px;
+}
+
+.wish-list-count-footer[_ngcontent-shn-c419]   .wish-list-count-footer-content[_ngcontent-shn-c419]   *[_ngcontent-shn-c419]:hover, .wish-list-count-footer[_ngcontent-shn-c419]   .wish-list-count-footer-content[_ngcontent-shn-c419]   *[_ngcontent-shn-c419]:active {
+  color: #e2001a;
+}</style><style>[_nghost-shn-c397] {
+  display: block;
+}
+
+.clickable-regions[_ngcontent-shn-c397] {
+  will-change: "transform";
+  transform-origin: top left;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper[_ngcontent-shn-c397] {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper[_ngcontent-shn-c397]   .click-to-add-windows[_ngcontent-shn-c397] {
+  color: #B40404;
+  text-align: center;
+  padding-left: 40px;
+  padding-top: 5px;
+}
+
+.mobile[_ngcontent-shn-c397]   .door-image[_ngcontent-shn-c397] {
+  max-height: 110px;
+}</style><style>[_nghost-shn-c395] {
+  display: block;
+}
+
+.image-wrapper[_ngcontent-shn-c395] {
+  position: relative;
+  display: inline-block;
+}
+
+.mobile[_ngcontent-shn-c395]   .door-image[_ngcontent-shn-c395] {
+  max-height: 110px;
+}</style><style>.close[_ngcontent-shn-c386] {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+
+.overlay[_ngcontent-shn-c386] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  
+}
+
+.design-center[_ngcontent-shn-c386] {
+  height: 100%;
+}
+
+.design-center[_ngcontent-shn-c386]   .container-fluid[_ngcontent-shn-c386] {
+  padding: 25px !important;
+  height: 100%;
+  overflow: auto;
+}
+
+.design-center[_ngcontent-shn-c386]   .container-fluid[_ngcontent-shn-c386]   .row[_ngcontent-shn-c386] {
+  margin-bottom: 5px;
+}
+
+.design-center[_ngcontent-shn-c386]   .container-fluid[_ngcontent-shn-c386]   .door-frame[_ngcontent-shn-c386] {
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+}
+
+.design-center[_ngcontent-shn-c386]   .container-fluid[_ngcontent-shn-c386]   .door-frame[_ngcontent-shn-c386]:hover, .design-center[_ngcontent-shn-c386]   .container-fluid[_ngcontent-shn-c386]   .door-frame.selected[_ngcontent-shn-c386] {
+  background-color: #d9d9d9;
+}
+
+.design-center[_ngcontent-shn-c386]   .container-fluid[_ngcontent-shn-c386]   .door-frame[_ngcontent-shn-c386]   img[_ngcontent-shn-c386] {
+  max-width: 68px;
+}
+
+.design-center[_ngcontent-shn-c386]   .container-fluid[_ngcontent-shn-c386]   .sections[_ngcontent-shn-c386] {
+  height: 100%;
+}
+
+.design-center[_ngcontent-shn-c386]   .container-fluid[_ngcontent-shn-c386]   .sections[_ngcontent-shn-c386]   .section-positioning-the-door[_ngcontent-shn-c386] {
+  margin-top: 15px;
+}
+
+.design-center[_ngcontent-shn-c386]   .container-fluid[_ngcontent-shn-c386]   .sections[_ngcontent-shn-c386]   #CanvasContainer[_ngcontent-shn-c386] {
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+
+.design-center[_ngcontent-shn-c386]   .container-fluid[_ngcontent-shn-c386]   .sections[_ngcontent-shn-c386]   #CanvasContainer.rendered[_ngcontent-shn-c386] {
+  margin: auto;
+}
+
+.design-center[_ngcontent-shn-c386]   .container-fluid[_ngcontent-shn-c386]   .title[_ngcontent-shn-c386] {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.design-center[_ngcontent-shn-c386]   .add-another-door[_ngcontent-shn-c386] {
+  margin-left: 25px;
+  margin-right: 15px;
+}
+
+.design-center[_ngcontent-shn-c386]   .remove-door[_ngcontent-shn-c386] {
+  margin-left: 15px;
+}
+
+.design-center[_ngcontent-shn-c386]   .cancel[_ngcontent-shn-c386] {
+  margin-right: 15px;
+}
+
+.design-center[_ngcontent-shn-c386]   .continue[_ngcontent-shn-c386] {
+  margin-left: 15px;
+}
+
+.design-center[_ngcontent-shn-c386]     .dx-button {
+  border-color: #e13d23;
+  font-weight: bold;
+}
+
+.design-center[_ngcontent-shn-c386]     .dx-button .dx-button-content {
+  padding: 7px 13px;
+}
+
+.design-center[_ngcontent-shn-c386]     .dx-button .dx-button-content .fas {
+  padding: 0 10px 0 0;
+}
+
+.design-center[_ngcontent-shn-c386]     .dx-button * {
+  color: white;
+  background-color: #e13d23;
+}
+
+.design-center[_ngcontent-shn-c386]     .dx-button.dx-state-hover {
+  background-color: #e13d23;
+  border-color: #e13d23;
+}
+
+.design-center[_ngcontent-shn-c386]     .dx-button .dx-button-text {
+  font-size: 14px;
+}
+
+.design-center.mobile[_ngcontent-shn-c386] {
+  text-align: left;
+}
+
+.design-center.mobile[_ngcontent-shn-c386]   .container-fluid[_ngcontent-shn-c386] {
+  padding: 15px !important;
+}
+
+.design-center.mobile[_ngcontent-shn-c386]   pc-button[_ngcontent-shn-c386]     .dx-button {
+  display: block;
+}
+
+.design-center.mobile[_ngcontent-shn-c386]   pc-button[_ngcontent-shn-c386]     .dx-button .dx-button-text {
+  font-size: 14px;
+}
+
+.design-center.mobile[_ngcontent-shn-c386]   .title[_ngcontent-shn-c386] {
+  margin-bottom: 2px;
+}
+
+.design-center.mobile[_ngcontent-shn-c386]   .add-another-door[_ngcontent-shn-c386] {
+  margin: 10px 0 0 0;
+}
+
+.design-center.mobile[_ngcontent-shn-c386]   .remove-door[_ngcontent-shn-c386] {
+  margin: 10px 0 0 0;
+}
+
+.design-center.mobile[_ngcontent-shn-c386]   p.positioning-explanation[_ngcontent-shn-c386] {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 320px) {
+  .design-center.mobile[_ngcontent-shn-c386]   .add-another-door[_ngcontent-shn-c386]     .dx-button .dx-button-text, .design-center.mobile[_ngcontent-shn-c386]   .remove-door[_ngcontent-shn-c386]     .dx-button .dx-button-text {
+    font-size: 12px;
+  }
+}</style><style>[_nghost-shn-c347]     .dx-button-text {
+  font-size: 14px;
+}
+
+[_nghost-shn-c347]     .dx-icon {
+  font-size: 18px;
+}</style><style>.title[_ngcontent-shn-c360] {
+  padding: 0px 10px 20px 10px;
+  border-bottom: 2px solid #ddd;
+  margin: 0px -10px 10px -10px;
+}
+
+.separator-container[_ngcontent-shn-c360] {
+  width: auto;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+  margin-top: 8px;
+  background-color: white;
+  padding: 4px 4px 8px;
+}
+
+.separator[_ngcontent-shn-c360] {
+  height: 1px;
+  border: 1px solid #ddd;
+  margin-bottom: 0;
+}
+
+[_nghost-shn-c360]     .dx-dropdowneditor-active .dx-invalid-message {
+  display: none;
+  z-index: 1000 !important;
+}</style><style>dc-more-info[_ngcontent-shn-c412] {
+  padding-left: 5px;
+  margin-top: -1px;
+}</style><style>dc-more-info[_ngcontent-shn-c413] {
+  padding-left: 5px;
+  margin-top: -1px;
+}</style><style>.clickable-region[_ngcontent-shn-c396] {
+  position: absolute;
+}
+
+.clickable-region-active[_ngcontent-shn-c396] {
+  cursor: pointer;
+}
+
+.clickable-region-active[_ngcontent-shn-c396]:hover {
+  background-color: #3399ff29;
+}
+
+.clickable-region-active[_ngcontent-shn-c396]:hover   .stile[_ngcontent-shn-c396] {
+  display: block;
+}
+
+.installed-window-description[_ngcontent-shn-c396] {
+  font-size: 13px;
+  white-space: nowrap;
+  display: block;
+}</style></head>
+<body class="hide-band is-ultimenu-canvas is-ultimenu-canvas--hover lang-en section-node path-node node--type-page" style="opacity: 1;">
+<a href="#main-content" class="visually-hidden focusable skip-link">
+    Skip to main content
+</a>
+<div class="page-top-region">
+  <noscript aria-hidden="true">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+</div>
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+    <div class="off-canvas-wrapper" style="margin-top: 140px;">
+  <div class="inner-wrap off-canvas-wrapper-inner" id="inner-wrap" data-off-canvas-wrapper="">
+    <aside id="left-off-canvas-menu" class="off-canvas left-off-canvas-menu position-left is-transition-push is-closed" role="complementary" data-off-canvas="" aria-hidden="true" data-e="ub880r-e">
+      
+    </aside>
+
+    <aside id="right-off-canvas-menu" class="off-canvas right-off-canvas-menu position-right is-transition-push is-closed" role="complementary" data-off-canvas="" aria-hidden="true" data-e="3ux827-e">
+      
+    </aside>
+
+    <div class="off-canvas-content" data-off-canvas-content="">
+    
+    <div class="row main-content container">
+            <main id="main" class="large-12 columns" role="main">
+        
+        <a id="main-content"></a>
+        <section>
+            <div>
+    <div data-drupal-messages-fallback="" class="hidden"></div><div id="block-mainpagecontent" class="block block-mainpagecontent">
+  
+    
+      <article id="node-6" data-history-node-id="6" role="article" about="/ca/designcentre/selection" typeof="schema:WebPage">
+    
+          <span property="schema:name" content="Design Centre - Build your door" class="hidden"></span>
+
+
+    
+        <div>
+        <div property="schema:text" class="body field field-node--body field-name-body field-type-text-with-summary field-label-hidden">
+    <div class="field-items">
+          <div property="schema:text" class="field-item"><h1 class="font-19 text-align-left" style="display: block;"><strong>Build your door</strong></h1>
+</div>
+      </div>
+</div><div class="field-wrapper field field-node--field-section-paragraph field-name-field-section-paragraph field-type-entity-reference-revisions field-label-hidden">
+    <div class="field-items">
+          <div class="field-item">  <div class="columns paragraph paragraph--type--block paragraph--view-mode--default">
+          <div class="field-wrapper field field-paragraph--field-block field-name-field-block field-type-block-field field-label-hidden">
+    <div class="field-items">
+          <div class="field-item"><div class="block">
+  
+    
+      <link href="css/styles.css" rel="stylesheet">
+    
+    <script src="js/zone.js"></script>
+    <script src="js/webcomponents-bundle.js"></script>
+    <script src="js/custom-elements-es5-adapter.js"></script>
+    <script src="js/polyfills-es5.js" nomodule=""></script>
+
+<design-center asseturl="https://configurator.garaga.com/design-center" apiurl="https://configurator.garaga.com/api" language="en" customercode="03TESTXX2" mobilestickytopmargin="0" defaultdesign="{ &quot;width&quot;: 9, &quot;height&quot;: 7, &quot;houseStyleId&quot;: 0, &quot;constructionTypeId&quot;: 9, &quot;designTypeId&quot;: 1, &quot;outsideColorId&quot;: 18, &quot;decorativeHardwareProductNumber&quot;: &quot;&quot;, &quot;decorativeHardwareDouble&quot;: false }" ng-version="12.0.5">
+    
+    <div slot="external-get-a-quote-content" style="display: block;">
+        <div class="row">
+<div class="columns small-6"><a class="get-pdf font-13" href="#">Save it in PDF</a></div>
+
+<div class="columns small-6 text-align-right"><a class="remove-the-photo font-13" href="" style="display: none;"> Remove the photo</a></div>
+</div>
+
+<div class="row">
+<div class="columns">
+  <a class="buttonRond fullWidth AvecParametres get-a-quote-link Padding-5 Marbot-20 Martop-10" href="#">Get your quote</a></div>
+</div>
+
+<div class="row text-align-center Marbot-10" style="line-height: 115%;">
+<div class="columns small-4"><a class="font-13 add-to-wish-list" href=""><i class="fas fa-heart font-25 Marbot-5">&nbsp;</i><br>
+Add to my Wish list</a></div>
+
+<div class="columns small-4"><a class="apply-to-my-home font-13" href="" style="display: initial;"><i class="fas fa-camera font-25 Marbot-5">&nbsp;</i><br>
+Apply to my&nbsp;home</a> <a class="try-another-photo font-13" href="" style="display: none;"><i class="fas fa-camera font-25 Marbot-5">&nbsp;</i><br>
+Try another photo</a> <a class="reposition-the-door font-13" href="" style="display: none;"><i class="fal fa-arrows font-25 Marbot-5">&nbsp;</i><br>
+Reposition the door</a></div>
+
+<div class="columns small-4"><a class="AvecParametres font-13 email-it" href="#">&nbsp;</i><br>
+Email it</a></div>
+</div>
+
+    </div>
+
+    <div slot="external-novatech-content" style="display: block;">
+        <div class="novatech-top text-align-center">Coordinates with &nbsp;<img alt="Logo Novatech" data-entity-type="file" data-entity-uuid="bbd7c589-1501-47f5-88f7-6cf4703cccb7" data-placeholder="" src="images/Novatech.jpg" style="vertical-align: middle; width: 110px;" title="Logo Novatech" loading="lazy" width="519" height="26"></div>
+    </div>
+
+    <div slot="external-arched-overlay-content" style="display: block;">
+        <div class="row">
+<div class="columns">
+<h2 class="Marbot-20 CAP darkGrey"><strong>Arch overlay</strong></h2>
+
+<p class="No-Marbot"><strong>Available for Princeton and Eastman​</strong></p>
+
+<p>Always installed in the top section of the door and only available with Panoramic windows or without windows.​</p>
+
+<div class="row Martop-10 small-up-2">
+<div class="column column-block text-align-center"><img alt="Arch Overlay Eastman Clear Panoramic without grid" class="square Martop-5 align-center" data-entity-type="file" data-entity-uuid="1c41302b-aef2-485f-9705-053e43c328e3" src="images/ArchOverlay-E12_SansBaguette.jpg" width="181"><p class="text-align-center No-Marbot Martop-5 font-13">Clear Panoramic without grid</p>
+</div>
+
+<div class="column column-block text-align-center"><img alt="Arch Overlay Eastman 4 vertical lites Panoramic" class="square Martop-5 align-center" data-entity-type="file" data-entity-uuid="ff1a2e7d-417a-47f4-8893-715b6e190f77" src="images/ArchOverlay-E12_4verticalLites.jpg" width="181"><p class="text-align-center No-Marbot Martop-5 font-13">4&nbsp;vertical lites Panoramic</p>
+</div>
+
+<div class="column column-block text-align-center"><img alt="Arch Overlay Eastman 8 lites Panoramic" class="square Martop-5 align-center" data-entity-type="file" data-entity-uuid="c1d2f0af-078c-4c70-a713-9f62ab808e7c" src="images/ArchOverlay-E12_8Lites.jpg" width="181"><p class="text-align-center No-Marbot Martop-5 font-13">8&nbsp;lites Panoramic</p>
+</div>
+
+<div class="column column-block text-align-center"><img alt="Arch Overlay Eastman Without windows" class="square Martop-5 align-center" data-entity-type="file" data-entity-uuid="aeaf6b1d-9466-432c-9d45-f20854acf672" src="images/ArchOverlay-E12_SansFenetres.jpg" width="181"><p class="text-align-center No-Marbot Martop-5 font-13">Without windows</p>
+</div>
+</div>
+</div>
+</div>
+
+    </div>
+
+    <div slot="external-decorative-hardware-content" style="display: block;">
+        <div class="row">
+<div class="columns">
+<h2 class="Marbot-20 CAP darkGrey"><strong>Decorative hardware</strong></h2>
+<p class="font-13 Marbot-10">Handmade wrought iron texture</p>
+
+<div class="row Marbot-10">
+<div class="small-8 medium-6 columns"><img class="square" alt="Decorative Hardware - Handmade wrought iron texture" data-entity-type="file" data-entity-uuid="d09735d8-080d-430a-8d5f-ec2b88af261e" src="images/D_DecoH_HandmadeWroughtIronTexture.jpg" width="300" height="233"></div>
+
+<div class="small-4 medium-6 columns text-align-center"><img alt="Lis decorative hardware" data-entity-type="file" data-entity-uuid="49592b60-1dbf-4e65-a21c-411d4966525e" src="images/D_DecoH_Lis.png" loading="lazy" width="97" height="79"><p class="Marbot-10 font-13">Lis</p>
+<img alt="Door knockers decorative hardware" data-entity-type="file" data-entity-uuid="a37fec70-8790-4397-96f7-45c623b58e06" src="images/D_DecoH_DoorKnockers.png" loading="lazy" width="97" height="60"><p class="font-13">Door knockers</p>
+</div>
+</div>
+
+<p class="font-13 Marbot-10">Slightly Bumpy Texture</p>
+
+<div class="row">
+<div class="small-8 medium-6 columns"><img class="square" alt="Decorative Hardware - Slightly Bumpy Texture" data-entity-type="file" data-entity-uuid="0dc7629a-9af1-4bfa-bfc7-1827b47628ab" src="images/D_DecoH_SlightlyBumpyTexture.jpg" width="300" height="233"></div>
+
+<div class="small-4 medium-6 columns text-align-center"><img alt="Standard decorative hardware" data-entity-type="file" data-entity-uuid="7a8a2f00-fbd1-4044-b04f-56494a3195a1" src="images/D_DecoH_Std.png" loading="lazy" width="97" height="79"><p class="Marbot-10 font-13">Standard</p>
+<img alt="Cottage decorative hardware" data-entity-type="file" data-entity-uuid="3dc9b4ef-2486-453c-9a21-0824c865fddc" src="images/D_DecoH_Cottage-Hinges.png" loading="lazy" width="97" height="98"><p class="font-13">Cottage</p>
+</div>
+</div>
+</div>
+</div>
+
+    </div>
+
+    <div slot="external-midamerica-gauge-content" style="display: block;">
+        <div class="row">
+<div class="columns">
+<h2 class="Marbot-20 CAP darkGrey"><strong>Gauge</strong></h2>
+
+<p>Unit of measure to evaluation the thickness of sheet metal. The smaller the gauge number, the thicker the steel.</p>
+</div>
+</div>
+
+    </div>
+
+    <div slot="external-glass-type-content" style="display: block;">
+        <div class="row">
+<div class="columns">
+<h2 class="Marbot-20 CAP darkGrey"><strong>Glass type</strong></h2>
+<img alt="Type of glass" class="Marbot-30" data-entity-type="file" data-entity-uuid="8c628e45-d2bf-4070-88f2-1fa70e51116a" src="images/Glass_Type.jpg" loading="lazy" width="410" height="214"><p class="No-Marbot">There are so many possibilities!</p>
+
+<p>To learn more about all of Garaga’s window options, see:</p>
+
+<p><a href="https://www.garaga.com/ca/information/faq/other-glass" target="_blank">There is a lot more than Clear Glass</a></p>
+
+<p><a href="https://www.garaga.com/ca/information/faq/windows" target="_blank">All available windows</a></p>
+
+<p><a href="https://www.garaga.com/ca/information/faq/type-glass" target="_blank">Available Types of Glass</a></p>
+
+<p><a href="https://www.garaga.com/ca/information/faq/window-orion" target="_blank">Available Orion windows (with grids)</a></p>
+
+<p><a href="https://www.garaga.com/ca/information/faq/stained-glass" target="_blank">Available windows with Stained Glass</a></p>
+
+<p><a href="https://www.garaga.com/ca/information/faq/thermo-vs-double" target="_blank">Difference between a thermopane and a double-pane window</a></p>
+
+<p><a href="https://www.garaga.com/ca/information/faq/low-e-argon" target="_blank">Energy- efficient low-E argon thermopane windows</a></p>
+
+<p><a href="https://www.garaga.com/ca/information/faq/difference-between-laminated-tempered-glass" target="_blank">Difference between laminated and tempered glass</a></p>
+</div>
+</div>
+
+    </div>
+
+    <div slot="external-how-to-take-a-picture-content" style="display: block;">
+        <p>Try for an overall view of your home</p>
+
+<p><img alt="Try for an overall view of your home" class="square" data-entity-type="file" data-entity-uuid="04813107-5de6-4a90-bfa7-e055be7f9fa4" src="images/PhotoMaisonIncorrecte.png" loading="lazy" width="320" height="117"></p>
+
+<p>Avoid photographing at an angle or vertically</p>
+
+<p><img alt="Avoid photographing at an angle or vertically" class="square" data-entity-type="file" data-entity-uuid="0e737317-e6e3-41b3-b346-f45c4cde8f7a" src="images/PhotoMaisonCorrecte.png" loading="lazy" width="211" height="114"></p>
+
+    </div>
+
+</design-center>
+<script src="js/main.js"></script>
+
+
+
+  </div>
+</div>
+      </div>
+</div>
+      </div>
+</div>
+      </div>
+</div>
+    </div>
+
+    
+    
+    
+</article>
+  </div>
+
+  </div>
+
+        </section>
+      </main>
+
+          </div>
+
+
+
+    
+    <div class="js-off-canvas-overlay is-overlay-absolute"></div><div class="js-off-canvas-overlay is-overlay-absolute"></div></div>
+  </div>
+</div>
+
+
+
+  </div>
+<script type="text/javascript" id="">(function(a,c,e,f,d,b){a.hj=a.hj||function(){(a.hj.q=a.hj.q||[]).push(arguments)};a._hjSettings={hjid:37960,hjsv:6};d=c.getElementsByTagName("head")[0];b=c.createElement("script");b.async=1;b.src=e+a._hjSettings.hjid+f+a._hjSettings.hjsv;d.appendChild(b)})(window,document,"https://static.hotjar.com/c/hotjar-",".js?sv\x3d");</script><script type="text/javascript" id="" src="js/swap.js"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1539026489718864");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1539026489718864&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<meta name="p:domain_verify" content="565045c4366c7f6daa9a287f3b3b3a6b"><script type="text/javascript" id="">(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);c.async=1;c.src="https://www.clarity.ms/tag/"+g;d=e.getElementsByTagName(f)[0];d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","3w0hhdjn2y");</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","616720425332521");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=616720425332521&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="">(function(b,c,d){var a=b.createElement("script");a.type="text/javascript";a.src="https://a.omappapi.com/app/js/api.min.js";a.async=!0;a.dataset.user=c;a.dataset.account=d;b.getElementsByTagName("head")[0].appendChild(a)})(document,103151,114752);</script>
+
+
+<div class="page-bottom-section">
+  <button data-ultimenu-button="#ultimenu-main" class="button button--ultimenu" aria-label="Menu" value="Menu"><span class="bars">Menu</span></button>
+</div>
+<script>
+  // function to edit classes before jquery, and the fontawesome js, enters
+  function editClass(selector, myClass, newClass) {
+
+    // get all elements that match our selector
+    elements = document.querySelectorAll(selector);
+
+    // remove class from all chosen elements
+    for (var i=0; i<elements.length; i++) {
+      elements[i].classList.remove(myClass);
+      elements[i].classList.add(newClass)
+    }
+  }
+
+  editClass('.fa', 'fa-garaga', 'font-awesome-garaga-color');
+</script>
+<script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"ca\/","currentPath":"node\/6","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"improved_multi_select":{"selectors":["select#edit-related-content-titles","select#edit-field-share-retailers","select#edit-node-page-field-share-retailers","select#edit-node-terminology-field-share-retailers","select#edit-node-faq-field-share-retailers"],"filtertype":"partial","placeholder_text":null,"orderable":false,"js_regex":null,"groupresetfilter":false,"remove_required_attr":null,"buttontext_add":"\u003E","buttontext_addall":"\u00bb","buttontext_del":"\u003C","buttontext_delall":"\u00ab","buttontext_moveup":"Move up","buttontext_movedown":"Move down"},"garaga":{"siteName":"Garaga"},"user":{"uid":0,"permissionsHash":"a3ef0ebfec24806fce8735b7440b3b942e96d9b0a7ad8e220d6d4baca677a7de"}}</script>
+<script src="js/jquery_003.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/drupalSettingsLoader.js"></script>
+<script src="js/drupal_002.js"></script>
+<script src="js/drupal.js"></script>
+<script src="js/google_analytics.js"></script>
+<script src="js/improved_multi_select.js"></script>
+<script src="js/sym_admin_menu.js"></script>
+<script src="js/foundation.js"></script>
+<script src="js/garaga.js"></script>
+<script src="js/garaga_design_center.js" defer="defer"></script>
+<script src="js/js.js"></script>
+<script src="js/jquery_002.js"></script>
+<script src="js/garaga_settings.js"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"e0aca60db6","applicationID":"56254834","transactionName":"YlIDN0VVWhEHW01bWFsYIABDXVsMSXxLR0dUWz0NWFBRPiVXV0ZFWlsNBkVoeg0CXW9bUkJ0Dg1DRlsOCl1LHwlDXgQU","queueTime":0,"applicationTime":504,"atts":"ThUAQQ1PSR8=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
+
+<script type="text/javascript" src="js/external_forms.js"></script><div class="reveal-overlay"><div class="reveal tiny" id="popup-modal" data-reveal="" role="dialog" aria-hidden="true" data-yeti-box="popup-modal" data-resize="popup-modal" data-e="pz1f7q-e">
+  <div id="popup-modal-content"></div>
+  <button class="close-button" data-close="" aria-label="Close reveal" type="button"><span aria-hidden="true">×</span></button>
+</div></div><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon423968873761"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon184892067081" alt="" src="Design%20Centre%20Garaga%20Garage%20Door%20quality_files/0.txt" width="0" height="0"></div><iframe style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;" name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="box-d09a446edefba0dcce5d5143e1840e9a.htm"></iframe><script type="text/javascript" src="js/icap.js"></script><script type="text/javascript" src="js/poll.js"></script></body></html>
