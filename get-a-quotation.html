@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- Mirrored from www.garaga.com/ca/get-a-quotation by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 20 Nov 2021 11:27:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"e0aca60db6",applicationID:"56254834"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?p("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&p("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;p("lcp",[r])}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||p("cls",[t])})}function a(t){if(t instanceof g&&!y){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),y=!0,p("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=l.now(),p("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d,p=t("handle"),l=t("loader"),v=t(9),m=t(3),g=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(h){}s=new PerformanceObserver(i);try{s.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}d=new PerformanceObserver(o);try{d.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var y=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,m(!1))})}v(c)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){y[t]=m(t).concat(e)}function v(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:h,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!T++){var t=P.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+P.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+P.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,h="addEventListener",y="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1212.min.js"},M=w&&b&&b[h]&&!/CriOS/.test(navigator.userAgent),P=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:M,userAgent:s,disabled:E};if(!E){t(1),t(7),g[h]?(g[h]("DOMContentLoaded",o,l(!1)),m[h]("load",r,l(!1))):(g[y]("onreadystatechange",i),m[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var T=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","../../www.google-analytics.com/analytics.js","ga");ga("create", "UA-2209234-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<link rel="canonical" href="get-a-quotation.html" />
+<meta name="description" content="Get a quotation for residential or commercial garage doors from one of our dealers to know the pricing of your future door!" />
+<meta name="Generator" content="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+<script src="js/apifef7.js" async defer></script>
+<link rel="shortcut icon" href="../sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="get-a-quotation.html" />
+<link rel="alternate" hreflang="fr" href="../fr-ca/obtenir-une-soumission.html" />
+<link rel="alternate" hreflang="en-us" href="../get-a-quotation.html" />
+<link rel="revision" href="get-a-quotation.html" />
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];var j=d.createElement(s);var dl=l!='dataLayer'?'&l='+l:'';j.src='../../www.googletagmanager.com/gtm5445.html?id='+i+dl+'';j.async=true;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PRLKTT8');</script>
+
+  <title>Quotation Garage Door | Residential &amp; Commercial | Garaga</title>
+  <link rel="stylesheet" media="all" href="css/css_8FId0DN4CIXukVuitEsU3x98bdJgU6Ld47dUPu97AO4.css" />
+<link rel="stylesheet" media="all" href="css/css__g5cQdYtBZB8KRXdyKeQlc4F0r2V9cQ-5w8wskGiORk.css" />
+<link rel="stylesheet" media="all" href="css/font.css" />
+<link rel="stylesheet" media="all" href="css/css_47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU.css" />
+
+  <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"ca\/","currentPath":"node\/6911","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"captcha\/base,fontawesome\/fontawesome.webfonts.shim,garaga\/fonts,garaga\/global-styling,garaga_settings\/garaga_red_off,google_analytics\/google_analytics,improved_multi_select\/ims,paragraphs\/drupal.paragraphs.unpublished,sym_admin_menu\/sym_admin_menu,system\/base,webform\/webform.element.details.save,webform\/webform.element.details.toggle,webform\/webform.element.flexbox,webform\/webform.element.message,webform\/webform.form,webform\/webform.form.auto_focus,webform\/webform.form.submit_once","theme":"garaga","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"improved_multi_select":{"selectors":["select#edit-related-content-titles","select#edit-field-share-retailers","select#edit-node-page-field-share-retailers","select#edit-node-terminology-field-share-retailers","select#edit-node-faq-field-share-retailers"],"filtertype":"partial","placeholder_text":null,"orderable":false,"js_regex":null,"groupresetfilter":false,"remove_required_attr":null,"buttontext_add":"\u003E","buttontext_addall":"\u00bb","buttontext_del":"\u003C","buttontext_delall":"\u00ab","buttontext_moveup":"Move up","buttontext_movedown":"Move down"},"garaga":{"siteName":"Garaga"},"user":{"uid":0,"permissionsHash":"a3ef0ebfec24806fce8735b7440b3b942e96d9b0a7ad8e220d6d4baca677a7de"}}</script>
+<script src="../core/assets/vendor/jquery/jquery.min45e0.html?v=3.6.0"></script>
+<script src="../core/misc/drupalSettingsLoadere787.html?v=9.2.0"></script>
+<script src="../core/misc/drupale787.html?v=9.2.0"></script>
+<script src="../core/misc/drupal.inite787.html?v=9.2.0"></script>
+<script src="js/webform.form.auto_focuse787.js"></script>
+
+</head>
+<body class="is-ultimenu-canvas is-ultimenu-canvas--hover lang-en section-node path-node node--type-page">
+<a href="#main-content" class="visually-hidden focusable skip-link">
+    Skip to main content
+</a>
+<div class="page-top-region">
+  <noscript aria-hidden="true">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+</div>
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div class="off-canvas-wrapper">
+  <div class="inner-wrap off-canvas-wrapper-inner" id="inner-wrap" data-off-canvas-wrapper>
+    <aside id="left-off-canvas-menu" class="off-canvas left-off-canvas-menu position-left" role="complementary" data-off-canvas>
+      
+    </aside>
+
+    <aside id="right-off-canvas-menu" class="off-canvas right-off-canvas-menu position-right" role="complementary" data-off-canvas>
+      
+    </aside>
+
+    <div class="off-canvas-content" data-off-canvas-content>
+
+    
+    <div class="row main-content container">
+            <main id="main" class="large-12 columns"  role="main">
+        
+        <a id="main-content"></a>
+        <section>
+            <div>
+    <div data-drupal-messages-fallback class="hidden"></div><div id="block-mainpagecontent" class="block block-mainpagecontent">
+  
+    
+      <article id="node-6911"  data-history-node-id="6911" role="article" about="/ca/get-a-quotation" typeof="schema:WebPage">
+    
+          <span property="schema:name" content="Get a quotation" class="hidden"></span>
+
+
+    
+        <div>
+        <div class="field-wrapper field field-node--field-section-paragraph field-name-field-section-paragraph field-type-entity-reference-revisions field-label-hidden">
+    <div class="field-items">
+          <div class="field-item">  <div class="columns columns medium-6 paragraph paragraph--type--block paragraph--view-mode--default">
+          <div class="field-wrapper field field-paragraph--field-block field-name-field-block field-type-block-field field-label-hidden">
+    <div class="field-items">
+          <div class="field-item"><div class="block">
+  
+    
+      <form class="webform-submission-form webform-submission-add-form webform-submission-get-a-free-quote-form webform-submission-get-a-free-quote-add-form webform-submission-get-a-free-quote-node-6911-form webform-submission-get-a-free-quote-node-6911-add-form js-webform-submit-once js-webform-autofocus js-webform-details-toggle webform-details-toggle" data-drupal-selector="webform-submission-get-a-free-quote-node-6911-add-form" action="#" method="post" id="webform-submission-get-a-free-quote-node-6911-add-form" accept-charset="UTF-8">
+  
+  <div id="edit-get-free-quote" class="js-form-item form-item js-form-type-processed-text form-item- js-form-item- form-no-label">
+        <h1 class="No-Marbot text-align-left">Get your quote</h1>
+
+<p>Complete this quick form to receive the most accurate quote for your project.</p>
+
+<h2 class="Marbot-10">My door model</h2>
+
+<p class="No-Marbot"><a href="#" title="Build your door online"><strong>Build it online</strong></a> before requesting your quote or describe your door or opener model.</p>
+
+        </div>
+<div class="js-form-item form-item js-form-type-textarea form-item-details js-form-item-details">
+      <label for="edit-details" class="js-form-required form-required">Door or opener description</label>
+        <div>
+  <textarea data-drupal-selector="edit-details" id="edit-details" name="details" rows="5" cols="60" class="form-textarea required" required="required" aria-required="true"></textarea>
+</div>
+
+        </div>
+<div id="edit-name-location" class="js-form-item form-item js-form-type-processed-text form-item- js-form-item- form-no-label">
+        <h2 class="Marbot-10">My contact details</h2>
+
+        </div>
+<div style="Box backGris No-Marbot" data-drupal-selector="edit-flex" class="webform-flexbox js-webform-flexbox webform-flexbox--center js-form-wrapper form-wrapper" id="edit-flex"><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-textfield form-item-firstname js-form-item-firstname">
+      <label for="edit-firstname" class="js-form-required form-required">First Name</label>
+        <input data-drupal-selector="edit-firstname" type="text" id="edit-firstname" name="firstname" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true" />
+
+        </div>
+</div></div><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-textfield form-item-lastname js-form-item-lastname">
+      <label for="edit-lastname" class="js-form-required form-required">Last Name</label>
+        <input data-drupal-selector="edit-lastname" type="text" id="edit-lastname" name="lastname" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true" />
+
+        </div>
+</div></div><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-textfield form-item-postalcode js-form-item-postalcode">
+      <label for="edit-postalcode" class="js-form-required form-required">Zip/Postal Code</label>
+        <input data-drupal-selector="edit-postalcode" type="text" id="edit-postalcode" name="postalcode" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true" />
+
+        </div>
+</div></div></div>
+<div data-drupal-selector="edit-flexbox" class="webform-flexbox js-webform-flexbox webform-flexbox--center js-form-wrapper form-wrapper" id="edit-flexbox"><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-email form-item-email js-form-item-email">
+      <label for="edit-email" class="js-form-required form-required">Email address</label>
+        <input data-drupal-selector="edit-email" type="email" id="edit-email" name="email" value="" size="60" maxlength="254" class="form-email required" required="required" aria-required="true" />
+
+        </div>
+</div></div><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="js-form-item form-item js-form-type-textfield form-item-phonenumber js-form-item-phonenumber">
+      <label for="edit-phonenumber" class="js-form-required form-required">Phone</label>
+        <input data-drupal-selector="edit-phonenumber" type="text" id="edit-phonenumber" name="phonenumber" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true" />
+
+        </div>
+</div></div></div>
+<div class="js-form-item form-item js-form-type-checkbox form-item-check-here-if js-form-item-check-here-if">
+        <input data-drupal-selector="edit-check-here-if" type="checkbox" id="edit-check-here-if" name="check_here_if" value="1" class="form-checkbox" />
+
+        <label for="edit-check-here-if" class="option">I would like to receive emails from Garaga on its latest products, exclusive offers, promotions and events at the above email address.</label>
+      </div>
+<div id="edit-text-we-will-contact-you" class="js-form-item form-item js-form-type-processed-text form-item- js-form-item- form-no-label">
+        <p class="font-13 No-Marbot"><strong>By clicking on the button "Get my free quotation", I understand that Garaga forwards my request to one of its dealers who is the best fit for me. This skilled Garaga specialist will give me a no-obligation quotation and answer all my questions too.</strong></p>
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions webform-actions js-form-wrapper form-wrapper" id="edit-actions"><input class="webform-button--submit buttonRond button button--primary js-form-submit form-submit" data-drupal-selector="edit-actions-submit" type="submit" id="edit-actions-submit" name="op" value="Get your free quotation" />
+
+</div>
+<div id="edit-processed-text" class="js-form-item form-item js-form-type-processed-text form-item- js-form-item- form-no-label">
+        <div class="row Martop-30">
+<div class="columns medium-1 small-3"><img alt="Dollar icon" data-entity-type="file" data-entity-uuid="5e69ef7b-8c57-40fb-b87f-28c8275cd366" height="1033" src="images/IconeDollard_soumission.png" width="660" loading="lazy" /></div>
+
+<div class="columns medium-6 end small-9">
+<p class="No-Marbot">Why a quote? The price of a door varies upon chosen components. <a href="#">Learn more</a></p>
+</div>
+</div>
+
+        </div>
+<input data-drupal-selector="edit-siteurl" type="hidden" name="siteurl" value="../ca.html" />
+<input data-drupal-selector="edit-formtype" type="hidden" name="formtype" value="quote" />
+<input data-drupal-selector="edit-honeypot-time" type="hidden" name="honeypot_time" value="oyAsQhNGAk2Lc65fP49aaBV1vepgj-SAhKwMajO6bfU" />
+<input autocomplete="off" data-drupal-selector="form-2kpudlirpbawjywmtedxyqec3niu4y3jskrkcmahsbu" type="hidden" name="form_build_id" value="form-2kPuDLirPbAwJYwmtEDXYQeC3NIU4Y3jSKRKcmAHsBU" />
+<input data-drupal-selector="edit-webform-submission-get-a-free-quote-node-6911-add-form" type="hidden" name="form_id" value="webform_submission_get_a_free_quote_node_6911_add_form" />
+    <div  data-drupal-selector="edit-captcha" class="captcha"><input data-drupal-selector="edit-captcha-sid" type="hidden" name="captcha_sid" value="6125141" />
+<input data-drupal-selector="edit-captcha-token" type="hidden" name="captcha_token" value="q0o0h9DAg_JGeV7__l-aoMUx6zh3WmS3acxDJnTB84I" />
+<input data-drupal-selector="edit-captcha-response" type="hidden" name="captcha_response" value="Google no captcha" />
+<div class="g-recaptcha" data-sitekey="6LcXYXMUAAAAAIoJTS55D2Y0lQgZ9JLREvbuiMpb" data-theme="light" data-type="image"></div><input data-drupal-selector="edit-captcha-cacheable" type="hidden" name="captcha_cacheable" value="1" />
+</div>
+<div class="myaddress-textfield js-form-wrapper form-wrapper" style="display: none !important;"><div class="js-form-item form-item js-form-type-textfield form-item-myaddress js-form-item-myaddress">
+      <label for="edit-myaddress">Leave this field blank</label>
+        <input autocomplete="off" data-drupal-selector="edit-myaddress" type="text" id="edit-myaddress" name="myaddress" value="" size="20" maxlength="128" class="form-text" />
+
+        </div>
+</div>
+
+
+  
+</form>
+
+  </div>
+</div>
+      </div>
+</div>
+      </div>
+</div>
+          <div class="field-item">  <div class="columns columns medium-6 paragraph paragraph--type--wysiwyg paragraph--view-mode--default">
+          <div class="field-wrapper field field-paragraph--field-text field-name-field-text field-type-text-long field-label-hidden">
+    <div class="field-items">
+          <div class="field-item"><p><a href="#" title="Learn more about our COVID-19 policy"><img alt="Learn more about our COVID-19 policy" class="show-for-medium align-center" data-entity-type="file" data-entity-uuid="" src="images/GetaQuote_Covid19_EN.jpg" width="400" /></a></p>
+
+<p><a href="covid-19.html" title="Learn more about our COVID-19 policy"><img alt="Our COVID-19 measures to serve you safely" class="hide-for-medium align-center" data-entity-type="" data-entity-uuid="" src="../../cmsgaraga.garaga.com/DrupalMicrosite/ImageShared/GetaQuote_Covid19_EN_Mobile.jpg" /></a></p></div>
+      </div>
+</div>
+      </div>
+</div>
+      </div>
+</div>
+    </div>
+
+    
+    
+    
+</article>
+  </div>
+
+  </div>
+
+        </section>
+      </main>
+
+          </div>
+    
+    </div>
+  </div>
+</div>
+
+<div class="reveal tiny" id="popup-modal" data-reveal>
+  <div id="popup-modal-content"></div>
+  <button class="close-button" data-close aria-label="Close reveal" type="button"><span aria-hidden="true">&times;</span></button>
+</div>
+
+  </div>
+
+<div class="page-bottom-section">
+  <button data-ultimenu-button="#ultimenu-main" class="button button--ultimenu" aria-label="Menu" value="Menu"><span class="bars">Menu</span></button>
+</div>
+<script>
+  // function to edit classes before jquery, and the fontawesome js, enters
+  function editClass(selector, myClass, newClass) {
+
+    // get all elements that match our selector
+    elements = document.querySelectorAll(selector);
+
+    // remove class from all chosen elements
+    for (var i=0; i<elements.length; i++) {
+      elements[i].classList.remove(myClass);
+      elements[i].classList.add(newClass)
+    }
+  }
+
+  editClass('.fa', 'fa-garaga', 'font-awesome-garaga-color');
+</script>
+<script src="../core/assets/vendor/css-escape/css.escapea474.js?v=1.5.1"></script>
+<script src="../core/assets/vendor/jquery-once/jquery.once.min62cf.html?v=2.2.3"></script>
+<script src="../core/assets/vendor/tabbable/index.umd.min097b.js?v=5.2.0"></script>
+<script src="../modules/contrib/google_analytics/js/google_analyticse787.html?v=9.2.0"></script>
+<script src="../modules/contrib/improved_multi_select/js/improved_multi_selecte787.html?v=9.2.0"></script>
+<script src="../modules/custom/symetris/sym_admin_menu/js/sym_admin_menue787.html?v=9.2.0"></script>
+<script src="../themes/garaga/js/foundation.min3860.html?v=1"></script>
+<script src="../themes/garaga/js/garaga3860.html?v=1"></script>
+<script src="../core/misc/debouncee787.js?v=9.2.0"></script>
+<script src="../core/misc/forme787.js?v=9.2.0"></script>
+<script src="../modules/contrib/webform/js/webform.behaviorse787.js?v=9.2.0"></script>
+<script src="../core/misc/statese787.js?v=9.2.0"></script>
+<script src="../modules/contrib/webform/js/webform.statese787.js?v=9.2.0"></script>
+<script src="../modules/contrib/webform/js/webform.forme787.js?v=9.2.0"></script>
+<script src="../core/misc/progresse787.js?v=9.2.0"></script>
+<script src="../core/misc/ajaxe787.js?v=9.2.0"></script>
+<script src="../core/themes/stable/js/ajaxe787.js?v=9.2.0"></script>
+<script src="../modules/contrib/webform/js/webform.form.submit_oncee787.js?v=9.2.0"></script>
+<script src="../modules/contrib/webform/js/webform.element.details.savee787.js?v=9.2.0"></script>
+<script src="../core/misc/announcee787.js?v=9.2.0"></script>
+<script src="../modules/contrib/webform/js/webform.element.details.togglee787.js?v=9.2.0"></script>
+<script src="../modules/contrib/webform/js/webform.element.messagee787.js?v=9.2.0"></script>
+<script src="../core/assets/vendor/js-cookie/js.cookie.minfe83.html?v=3.0.0-rc0"></script>
+<script src="../core/misc/jquery.cookie.shime787.html?v=9.2.0"></script>
+<script src="../modules/custom/garaga/garaga_settings/js/garaga_settings.red_offa0fc.html?v=1.x"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"e0aca60db6","applicationID":"56254834","transactionName":"YlIDN0VVWhEHW01bWFsYIABDXVsMSXxLR0dUWz0NWFBRPiVXV0ZFWlsNBkVoeg0CXW9bUkJ0Dg1DRlsOCl1LHwlDXgQU","queueTime":0,"applicationTime":688,"atts":"ThUAQQ1PSR8=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script><a href="../bot_deception.html" style='display:none'>login</a></body>
+
+<script src="../fwb_client/05091757_index.js"></script><script>fwb_client_module.f("1","1","1","1","1","3wTmZpSTzSPW5Pu3OG1x/3PKWzlqE0Ow2UIu+5q8L0dLT3C/Uze9ElqCAlMrVejtvk5p/MNGSP6mg3qerZPvwA==")</script>
+
+<!-- Mirrored from www.garaga.com/ca/get-a-quotation by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 20 Nov 2021 11:27:50 GMT -->
+</html>
