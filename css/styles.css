@@ -15,33 +15,6 @@ It is no longer required.
 * Version: 21.1.4
 * http://js.devexpress.com/ThemeBuilder/
 */
-h1{
-  font-family: DM sans-serif !important;
-}
-h2{
-  font-family: DM sans-serif !important;
-}
-h3{
-  font-family: DM sans-serif !important;
-}
-h4{
-  font-family: DM sans-serif !important;
-}
-h5{
-  font-family: DM sans-serif !important;
-}
-h6{
-  font-family: DM sans-serif !important;
-}
-p{
-  font-family: DM sans-serif !important;
-}
-strong{
-  font-family: DM sans-serif !important;
-}
-input{
-  font-family: DM sans-serif !important;
-}
 .dx-validationsummary-item {
     cursor: pointer;
 }
