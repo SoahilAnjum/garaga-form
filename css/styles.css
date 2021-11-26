@@ -15,6 +15,10 @@ It is no longer required.
 * Version: 21.1.4
 * http://js.devexpress.com/ThemeBuilder/
 */
+h1,h2,h3,h4,h5,h6,p,strong,input-placeholder{
+  font-family: DM sans-serif !important;
+  font-family: auto;
+}
 .dx-validationsummary-item {
     cursor: pointer;
 }
