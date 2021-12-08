@@ -6,6 +6,30 @@
 <style>body {transition: opacity ease-in 0.2s; } 
 body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
 </style>
+<style type="text/css">
+    #edit-flexbox{
+        display: flex;
+    }
+    .webform-flex {
+        width:40%;
+        margin-right: 20px;
+
+    }
+    #Name{
+        height:50px;
+        background-color:#f3f3f3;
+    }
+    #email{
+        height:50px;
+        background-color:#f3f3f3;
+    }
+    .buttonRond, a.buttonRond{
+        border-radius: 0px;
+        height: 50px !important;
+    }
+
+
+</style>
 
  
    <script type="text/javascript" src="js/e0aca60db6"></script>
@@ -1014,21 +1038,22 @@ dc-more-info[_ngcontent-shn-c403] {
 
 <div class="row">
 <div data-drupal-selector="edit-flexbox" class="webform-flexbox js-webform-flexbox webform-flexbox--center js-form-wrapper form-wrapper" id="edit-flexbox">
+    <div class="webform-flex webform-flex--1">
+<div class="webform-flex--container"><div class="js-form-item form-item js-form-type-textfield form-item-phonenumber js-form-item-phonenumber">
+      <label for="edit-phonenumber" class="js-form-required form-required">Name</label>
+        <input data-drupal-selector="edit-phonenumber" type="text" id="Name" name="phonenumber" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true" />
+
+        </div>
+</div></div>
 <div class="webform-flex webform-flex--1">
 <div class="webform-flex--container"><div class="js-form-item form-item js-form-type-email form-item-email js-form-item-email">
       <label for="edit-email" class="js-form-required form-required">Email address</label>
-        <input data-drupal-selector="edit-email" type="email" id="edit-email" name="email" value="" size="60" maxlength="254" class="form-email required" required="required" aria-required="true" />
+        <input data-drupal-selector="edit-email" type="email" id="email" name="email" value="" size="60" maxlength="254" class="form-email required" required="required" aria-required="true" />
 
         </div>
 </div>
 </div>
-<div class="webform-flex webform-flex--1">
-<div class="webform-flex--container"><div class="js-form-item form-item js-form-type-textfield form-item-phonenumber js-form-item-phonenumber">
-      <label for="edit-phonenumber" class="js-form-required form-required">Phone</label>
-        <input data-drupal-selector="edit-phonenumber" type="text" id="edit-phonenumber" name="phonenumber" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true" />
-
-        </div>
-</div></div></div>
+</div>
 <div class="columns">
   <a class="buttonRond fullWidth AvecParametres get-a-quote-link Padding-5 Marbot-20 Martop-10" href="get-a-quotation.html">Get your quote</a></div>
 </div>
